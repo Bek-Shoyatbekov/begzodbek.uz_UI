@@ -1,0 +1,23 @@
+
+.navbar {
+    overflow: hidden;
+    background-color: rgba(231, 224, 224, 0);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.navbar a {
+    text-after-overflow: ellipsis;
+    float: none;
+    color: #fffdfd;
+    padding: 14px 28px;
+    margin-top: 15px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.navbar a:hover {
+    color: #1c87c9;
+}
+
