@@ -1,0 +1,38 @@
+
+
+
+.follow_content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.follow_text {
+    color: #bcb2b2;
+    font-size: 30px;
+    margin-bottom: 10px;
+    font-family: "Phetsarath OT", serif;
+}
+.flex{
+    display: grid;
+    grid-template-columns: 120px 40px;
+    grid-gap: 20px;
+
+}
+
+li {
+    list-style: none;
+
+}
+
+.img1 {
+    width: 40px;
+    height: 40px;
+}
+.img2 {
+    margin-top: -15px;
+    width: 70px;
+    height: 70px;
+}
+
+
