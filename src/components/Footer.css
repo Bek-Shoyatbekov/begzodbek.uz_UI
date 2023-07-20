@@ -1,8 +1,9 @@
+/** @format */
 
 .footer_content {
-    font-size: 8px;
-    text-align: center;
-    color: #b6b6bc;
-    font-family: 'Courier New', Courier, monospace;
-    margin: 20rem 0rem 0rem 0px;
+  font-size: 8px;
+  text-align: center;
+  color: #b6b6bc;
+  font-family: "Courier New", Courier, monospace;
+  margin-top: 21rem;
 }

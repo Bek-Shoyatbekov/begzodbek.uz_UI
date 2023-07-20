@@ -1,6 +1,7 @@
 import {Nav} from "../components/Nav";
 
-import "../styles/article.css";
+import "../components/Article.css";
+import {Footer} from "../components/Footer";
 
 export function About() {
     return (

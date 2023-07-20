@@ -1,32 +1,32 @@
+/** @format */
 
 .navbar {
-    overflow: hidden;
-    background-color: #282c34;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
+  overflow: hidden;
+  background-color: #282c34;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: fixed;
+  padding-top: 3px;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
 .navbar a {
-    text-after-overflow: ellipsis;
-    float: none;
-    color: #fffdfd;
-    padding: 14px 28px;
-    margin-top: 15px;
-    text-decoration: none;
-    font-size: 18px;
+  float: none;
+  color: #fffdfd;
+  padding: 14px 28px;
+  margin-top: 15px;
+  text-decoration: none;
+  font-size: 18px;
 }
 
 .navbar a:hover {
-    color: #1c87c9;
+  color: #1c87c9;
 }
 .row {
-    margin: 0 auto;
-    max-width: 1200px;
-    text-align: start;
+  margin: 0 auto;
+  max-width: 1200px;
+  text-align: start;
 }
-
