@@ -1,0 +1,87 @@
+.articles_container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  margin-top: 60px;
+}
+
+.article {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  transition: transform 0.2s ease;
+}
+
+.article:hover {
+  transform: scale(1.02);
+}
+
+.article img {
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+}
+
+.article h3 {
+  font-size: 1.2em;
+  margin-top: 0;
+}
+
+.article p {
+  color: #555;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.article .price {
+  font-size: 1.1em;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #0077ff;
+}
+
+.article button {
+  background-color: #0077ff;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .article {
+    text-align: center;
+  }
+
+  .article button {
+    width: 100%;
+  }
+}
+
+.article h3 {
+  font-size: 1.4em;
+  font-weight: 600;
+  margin-top: 0;
+}
+
+.article h3::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 3px;
+  background-color: #feffff;
+  margin-top: 5px;
+}
+
+@media (max-width: 600px) {
+  .article h3 {
+    font-size: 1.2em;
+  }
+
+  .article h3::after {
+    margin: 5px auto 0;
+  }
+}

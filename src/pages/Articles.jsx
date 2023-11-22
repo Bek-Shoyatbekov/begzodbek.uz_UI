@@ -4,47 +4,43 @@ import { Nav } from "../components/Nav";
 
 import React, { useEffect, useState } from "react";
 
-import "../components/Article.css";
-
-import { Article } from "../components/Article";
-
-import { Follow } from "../components/Follow";
+import "./Articles.css";
 
 const url = process.env.REACT_APP_URL;
 
 export const Articles = () => {
-  const [article, setArticle] = useState([]);
+  const [articles, setArticles] = useState([]);
 
-  const fetchArticles = () => {
-    fetch(`${url}/blogs?filterBy=article`)
-      .then((res) => {
-        return res.json();
-      })
-      .then((data) => {
-        setArticle(data);
-      });
+  const fetchArticles = async () => {
+    const res = await fetch(`${url}/blogs?filterBy=article`, { method: "GET" });
+    const data = await res.json();
+    setArticles(data);
+    return data;
   };
   useEffect(() => {
     fetchArticles();
   }, []);
-  let renderArticle;
-  if (article.length === 0) {
-    renderArticle = <h1>Loading...</h1>;
-  } else {
-    renderArticle = article.map((article) => {
-      return <Article key={article._id} article={article} />;
-    });
-  }
+
   return (
     <>
       <Nav />
       <div
-        className="article_container"
+        className="articles_container"
         data-aos="fade-up"
-        data-aos-duration="1500">
-        <div className="articles">{renderArticle}</div>
-        <div className="follow_me">
-          <Follow />
+        data-oas-duration="5000"
+      >
+        <div className="articles">
+          {articles.length === 0 ? (
+            <h1>Loading Articles</h1>
+          ) : (
+            articles.map((article) => (
+              <div className="article">
+                <img src={article.body.image} alt="" />
+                <h3>{article.title}</h3>
+                <button>Read More</button>
+              </div>
+            ))
+          )}
         </div>
       </div>
     </>

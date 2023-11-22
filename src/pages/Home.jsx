@@ -4,16 +4,16 @@ import React from "react";
 
 import { Nav } from "../components/Nav";
 
-import "../components/Home.css";
-
 import { Footer } from "../components/Footer";
 
 import { Follow } from "../components/Follow";
 
+import "./Home.css";
+
 export function Home() {
   return (
     <>
-      <div className="root">
+      <div className="root centered">
         <Nav />
         <div className="container">
           <div className="content">
@@ -21,7 +21,8 @@ export function Home() {
               <div
                 data-aos="fade-up"
                 data-aos-easing="ease-out-cubic"
-                data-aos-duration="1500">
+                data-aos-duration="1500"
+              >
                 <img
                   src={require("../images/my_image_edited_version.jpg")}
                   className="my_image"
@@ -32,7 +33,8 @@ export function Home() {
                 className="about_text"
                 data-aos="fade-up"
                 data-aos-easing="ease-out-cubic"
-                data-aos-duration="1500">
+                data-aos-duration="1500"
+              >
                 <h1 className="name">Bek Shoyatbekov</h1>
                 <h2 className="title">Software Engineer</h2>
                 <p className="description">

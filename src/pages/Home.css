@@ -50,11 +50,3 @@ body {
   width: 55%;
   margin-bottom: 10px;
 }
-
-.lists {
-  display: flex;
-  flex-direction: row;
-  column-gap: 15px;
-  margin-left: 9px;
-  list-style: none;
-}

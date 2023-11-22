@@ -1,15 +1,20 @@
 /** @format */
 
 import React from "react";
-import "./Home.css";
+
+import "./Follow.css";
 
 export function Follow() {
   return (
     <>
-      <div className="links" data-aos="fade-up" data-aos-duration="2000">
+      <div className="links" data-aos="fade-up" data-aos-duration="3000">
         <ul className="lists">
           <li>
-            <a href="https://www.linkedin.com/in/bekshoyatbekov/">
+            <a
+              href="https://www.linkedin.com/in/bek-shoyatbekov-96507a234"
+              target="_blank"
+              rel="noreferrer"
+            >
               <img
                 width={"33px"}
                 height={"33px"}
@@ -19,7 +24,11 @@ export function Follow() {
             </a>
           </li>
           <li>
-            <a href={"https://github.com/Bek-Shoyatbekov"}>
+            <a
+              href={"https://github.com/Bek-Shoyatbekov"}
+              target="_blank"
+              rel="noreferrer"
+            >
               <img
                 style={{
                   marginTop: "-5px",
@@ -32,7 +41,11 @@ export function Follow() {
             </a>
           </li>
           <li>
-            <a href={"https://t.me/Bek_Shoyatbekov"}>
+            <a
+              href={"https://t.me/Bek_Shoyatbekov"}
+              target="_blank"
+              rel="noreferrer"
+            >
               <img
                 width={"33px"}
                 height={"33px"}
